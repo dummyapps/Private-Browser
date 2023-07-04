@@ -1,0 +1,23 @@
+/* 
+  Localizable.strings
+  EasyWebBrowser
+*/
+"SELECTED_DIRECTORY_PROMPT"="Please select file";
+"DOWNLOAD_TABLE_HEADER_STRING"="Total %ld";
+
+
+"BOOKMARK_INVALID_TITLE_STRING"="Untitled";
+"PRODUCT_WEBBROWSER_URL_STRING"="https://itunes.apple.com/us/app/private-browser/id829422862?mt=12";
+"PRODUCT_ISEE_URL_STRING"="https://itunes.apple.com/us/app/isee-images-viewer/id601882088?mt=12";
+"PRODUCT_DUPLICATECLEANER_URL_STRING"="https://itunes.apple.com/us/app/duplicate-cleaner-find-clean/id566268025?mt=12";
+"PRODUCT_IMAGESRESIZER_URL_STRING"="https://itunes.apple.com/us/app/batch-image-toolset/id545793547?mt=12";
+"PRODUCT_IMAGESPDF_URL_STRING"="https://itunes.apple.com/us/app/images-to-pdf/id680559467?mt=12";
+"PRODUCT_ALL_URL_STRING"="http://itunes.apple.com/us/artist/dummy-apps/id525194985?mt=12";
+
+
+"WARNING_STRING"="Warning";
+"OK_STRING"="OK";
+"RESTRICT_URL_STRING"="The App can download images from all websites automatically (including Copyright protected), please make sure you have the right to download, if you don't, please quit the App, thanks!";
+
+"PRODUCT_EMAIL_TITLE_STRING"="Batch download images from webpage";
+"PRODUCT_EMAIL_BODY_STRING"="Hello,\n\r'Private Browser' can help you to batch download all images from webpage automatically, you don't have to save images one by one from webpage any more.\n\rApp on Mac App Store: https://itunes.apple.com/us/app/webpage-images-crawler/id829422862?ls=1&mt=12";

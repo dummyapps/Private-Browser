@@ -1,0 +1,22 @@
+/* 
+  Localizable.strings
+  EasyWebBrowser
+*/
+"SELECTED_DIRECTORY_PROMPT"="请选择文件";
+"DOWNLOAD_TABLE_HEADER_STRING"="共 %ld 项";
+
+
+"WARNING_STRING"="警告";
+"OK_STRING"="确认";
+"RESTRICT_URL_STRING"="请注意，此软件可以自动下载所有网站的图片(包括被版权保护的网站)，如果您没有获得网站的下载许可，请立即退出App,谢谢!";
+
+"BOOKMARK_INVALID_TITLE_STRING"="未命名";
+"PRODUCT_WEBBROWSER_URL_STRING"="https://itunes.apple.com/cn/app/%E7%A7%81%E5%AF%86%E6%B5%8F%E8%A7%88%E5%99%A8/id829422862?mt=12";
+"PRODUCT_ISEE_URL_STRING"="https://itunes.apple.com/cn/app/isee-tu-pian-liu-lan-qi/id601882088?mt=12";
+"PRODUCT_DUPLICATECLEANER_URL_STRING"="https://itunes.apple.com/cn/app/zhong-fu-wen-jian-qing-li/id566268025?mt=12";
+"PRODUCT_IMAGESRESIZER_URL_STRING"="https://itunes.apple.com/cn/app/tu-pian-chu-li-gong-ju-ji/id545793547?mt=12";
+"PRODUCT_IMAGESPDF_URL_STRING"="https://itunes.apple.com/cn/app/tu-pian-zhuanpdf/id680559467?mt=12";
+"PRODUCT_ALL_URL_STRING"="http://itunes.apple.com/us/artist/dummy-apps/id525194985?mt=12";
+
+"PRODUCT_EMAIL_TITLE_STRING"="批量下载网页图片";
+"PRODUCT_EMAIL_BODY_STRING"="您好,\n\r'私密浏览器'可以批量自动下载网络图片，批量自动保存网页所有图片，省时省心.\n\rMac App Store下载地址: https://itunes.apple.com/cn/app/si-mi-liu-lan-qi-pi-liang/id829422862?mt=12";

@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="15705" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="15705"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
+            <connections>
+                <outlet property="delegate" destination="494" id="495"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <menu title="AMainMenu" systemMenu="main" id="29">
+            <items>
+                <menuItem title="MMTabBarView Demo" id="56">
+                    <menu key="submenu" title="MMTabBarView Demo" systemMenu="apple" id="57">
+                        <items>
+                            <menuItem title="About Private Browser" id="58">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="orderFrontStandardAboutPanel:" target="-2" id="142"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="236">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Hide Private Browser" keyEquivalent="h" id="134">
+                                <connections>
+                                    <action selector="hide:" target="-1" id="367"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Hide Others" keyEquivalent="h" id="145">
+                                <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                <connections>
+                                    <action selector="hideOtherApplications:" target="-1" id="368"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Show All" id="150">
+                                <connections>
+                                    <action selector="unhideAllApplications:" target="-1" id="370"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="149">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Restore Window" id="ZKV-cn-rkk">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="restoreWindow:" target="494" id="4eQ-YP-hA0"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Quit Private Browser" keyEquivalent="q" id="136">
+                                <connections>
+                                    <action selector="terminate:" target="-3" id="449"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="File" id="Z6B-Hs-jQO">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="File" id="0Bj-nC-y3o">
+                        <items>
+                            <menuItem title="Batch open Urls" id="mUG-bo-vEC">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="menuBatchDownloadpanel:" target="-1" id="3uV-YB-8DV"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Set As Defaut Page" id="aIw-H5-U3E">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="addAsDefaultPage:" target="-1" id="bJM-7G-wP4"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="fB1-r1-DnQ"/>
+                            <menuItem title="Save Page As Default Type" keyEquivalent="s" id="ADn-JS-L6Z">
+                                <modifierMask key="keyEquivalentModifierMask" option="YES"/>
+                                <connections>
+                                    <action selector="printWebPage:" target="-1" id="1Ud-rq-oys"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Save Page As Default Type To ..." keyEquivalent="S" id="PA8-RV-Jm1">
+                                <modifierMask key="keyEquivalentModifierMask" shift="YES" option="YES"/>
+                                <connections>
+                                    <action selector="printWebPageAs:" target="-1" id="cJX-6k-VUS"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Save Page To WebArchive" keyEquivalent="1" id="vvC-Q2-cF4">
+                                <modifierMask key="keyEquivalentModifierMask" option="YES"/>
+                                <connections>
+                                    <action selector="printWebAchieve:" target="-1" id="KLO-S4-pCa"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Save All Pages To WebArchive" keyEquivalent="1" id="hLH-B8-6xk">
+                                <modifierMask key="keyEquivalentModifierMask" shift="YES" option="YES"/>
+                                <connections>
+                                    <action selector="printAllTOArchive:" target="-1" id="ha9-Z6-cDp"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Save Page To PDF" keyEquivalent="2" id="L4a-LR-45n">
+                                <modifierMask key="keyEquivalentModifierMask" option="YES"/>
+                                <connections>
+                                    <action selector="printPDF:" target="-1" id="tGq-Ov-C9N"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Save All Pages To PDF" keyEquivalent="2" id="3Hn-M3-ZLc">
+                                <modifierMask key="keyEquivalentModifierMask" shift="YES" option="YES"/>
+                                <connections>
+                                    <action selector="printAllTOPDF:" target="-1" id="3pM-42-sj6"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Save Page To Image" keyEquivalent="3" id="KzO-Jg-1hm">
+                                <modifierMask key="keyEquivalentModifierMask" option="YES"/>
+                                <connections>
+                                    <action selector="printImage:" target="-1" id="XFZ-CG-IHd"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Save All Pages To Image" keyEquivalent="3" id="08U-cO-crw">
+                                <modifierMask key="keyEquivalentModifierMask" shift="YES" option="YES"/>
+                                <connections>
+                                    <action selector="printAllToImage:" target="-1" id="TMA-sd-9BU"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="ORD-iB-0wK"/>
+                            <menuItem title="Bookmark All Webpage" keyEquivalent="b" id="zgk-UH-oU5">
+                                <modifierMask key="keyEquivalentModifierMask" option="YES"/>
+                                <connections>
+                                    <action selector="saveAllBookmark:" target="-1" id="sBa-hj-4EZ"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="l6W-3c-9Jb"/>
+                            <menuItem title="Lock Window" keyEquivalent="l" id="NIF-2n-JUC">
+                                <modifierMask key="keyEquivalentModifierMask" control="YES"/>
+                                <connections>
+                                    <action selector="lockWindow:" target="494" id="8Xg-MU-I3y"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="65q-TT-yHo"/>
+                            <menuItem title="Open Download Folder" keyEquivalent="o" id="tgb-Ja-rej">
+                                <connections>
+                                    <action selector="openDefaultDownloadFolder:" target="-1" id="7BL-pH-bTw"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Show BookMark File" id="0g5-FD-QCe">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="showBookMarkFile:" target="494" id="I2U-2y-I6C"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="64u-UK-2AV"/>
+                            <menuItem title="Clear Download History" id="6DV-u7-TP2">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="clearHistory:" target="-1" id="KUI-Mw-aAG"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Edit" id="217">
+                    <menu key="submenu" title="Edit" id="205">
+                        <items>
+                            <menuItem title="Undo" keyEquivalent="z" id="207">
+                                <connections>
+                                    <action selector="undo:" target="-1" id="223"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Redo" keyEquivalent="Z" id="215">
+                                <modifierMask key="keyEquivalentModifierMask" shift="YES" command="YES"/>
+                                <connections>
+                                    <action selector="redo:" target="-1" id="231"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="206">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Cut" keyEquivalent="x" id="199">
+                                <connections>
+                                    <action selector="cut:" target="-1" id="228"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Copy" keyEquivalent="c" id="197">
+                                <connections>
+                                    <action selector="copy:" target="-1" id="224"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Paste" keyEquivalent="v" id="203">
+                                <connections>
+                                    <action selector="paste:" target="-1" id="226"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Select All" keyEquivalent="a" id="198">
+                                <connections>
+                                    <action selector="selectAll:" target="-1" id="232"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Format" id="375">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+                <menuItem title="View" id="295">
+                    <menu key="submenu" title="View" id="296">
+                        <items>
+                            <menuItem title="Show Toolbar" keyEquivalent="t" id="297">
+                                <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                <connections>
+                                    <action selector="toggleToolbarShown:" target="-1" id="366"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Add Bookmark" keyEquivalent="m" id="cTd-Vs-Ugi">
+                                <connections>
+                                    <action selector="addCurrentPageToBookmark:" target="-1" id="bsi-VW-fLc"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Page Refresh" keyEquivalent="r" id="MVT-rx-kI1">
+                                <connections>
+                                    <action selector="refreshCurrentPage:" target="-1" id="zSy-3m-sgP"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="Yyk-Jc-H6f"/>
+                            <menuItem title="New Tab" keyEquivalent="t" id="538">
+                                <connections>
+                                    <action selector="addNewTab:" target="-1" id="Zvc-lq-PL1"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Next Tab" keyEquivalent="f" id="6wn-lJ-ZZx">
+                                <connections>
+                                    <action selector="selectNextTab:" target="-1" id="Zq9-xQ-alI"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Previous Tab" keyEquivalent="b" id="iYb-xi-3Oh">
+                                <connections>
+                                    <action selector="selectPreviousTab:" target="-1" id="g9y-Cf-Ked"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Close Tab" keyEquivalent="d" id="539">
+                                <connections>
+                                    <action selector="closeTab:" target="-1" id="d7o-HN-GQ7"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Close All Tabs" keyEquivalent="w" id="qGV-N0-GqO">
+                                <connections>
+                                    <action selector="closeAllTabs:" target="-1" id="AQn-24-TWW"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="540">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Fit Webpage Width" keyEquivalent="e" id="Fbz-GM-FUb">
+                                <connections>
+                                    <action selector="adjustToFitWebpage:" target="-1" id="Rbj-eO-NMh"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Increase Window Width" keyEquivalent="." id="k12-8m-evR">
+                                <connections>
+                                    <action selector="increaseWindowSize:" target="-1" id="D7Z-rn-VuG"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Decrease Window Width" keyEquivalent="," id="90p-Sv-O8n">
+                                <connections>
+                                    <action selector="decreaseWindowSize:" target="-1" id="3Xy-6z-ULn"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Window" id="19"/>
+                <menuItem title="Help" id="YNQ-mv-CUE">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="Help" systemMenu="help" id="WdA-DC-fxo">
+                        <items>
+                            <menuItem title="Application Help" keyEquivalent="?" id="cyY-Bz-rUN">
+                                <connections>
+                                    <action selector="productHelp:" target="494" id="c3R-dn-GmH"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Check All Product " id="5D0-A1-MEZ">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="checkProduct:" target="494" id="rND-Sj-ZUD"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+            </items>
+            <point key="canvasLocation" x="139" y="-50"/>
+        </menu>
+        <customObject id="494" customClass="MMAppDelegate"/>
+        <customObject id="420" customClass="NSFontManager"/>
+        <userDefaultsController representsSharedInstance="YES" id="U6V-Pk-KRy"/>
+    </objects>
+</document>

@@ -9,3 +9,10 @@ A Mac web browser can download images from webpage automatically, it can also sa
 [ToDo]
 1. More powerfull bookmark
 2. Can download videos automatically
+3. Code clean
+
+[How to build]
+1. download source code package
+2. double click "default.xcworkspace"
+3. build "MMTabBarView" target
+4. run "MMTabBarView Demo" target
